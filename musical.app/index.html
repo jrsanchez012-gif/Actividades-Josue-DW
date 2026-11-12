@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Musical Josue</title>
+<!--Doctype es una sentencia que indica que voy a trabajar con un documento de HTML-->
+<html lang="es"> <!--Aquí inicia mi pagina con la etiqueta de html-->
+<head> <!--Aqui en el head esta todo lo que no es visible en la página pero lo hace funcional-->
+<!--Con los metadatos puedo colocar caracteres especiales, dar información al SEO para posiciones-->
+<meta charset="UTF-8">
+    <meta name="description" content="Musical de Navidad">
+    <meta name="author" content="Josué Sánchez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- -->
+
+<title>The Neighbouhood</title>
 </head>
 <body>
 
-<h1>Musical Josue</h1>
-<p>Escucha mis 3 canciones de Pop</p>
+<div class="container-musical"> 
+    <img src="Imagen1.jpg" alt="Imagen de musical app" class="imagen-portada">
+
+    <h1>Musica de The Neighbourhood</h1>
+    <p>Mejores canciones de The Nbhd</p> 
+
+    <div class="lista-canciones"> 
+    <!--CANCIÓN -->
+    <div class="canciones"> 
+         <p>1. Sweater Weather</p> 
+          <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Sweater Weather (1).mp3" type="audio/mpeg">
+                </audio>
+    </div>
+
+    <!--CANCIÓN 2-->
+    <div class="canciones"> 
+         <p>2. CryBaby</p> 
+          <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 2 -->
+                    <source src="The Neighbourhood - Cry Baby.mp3" type="audio/mpeg">
+                </audio>
+    </div>
+
+    <!--CANCIÓN 3-->
+    <div class="canciones"> 
+         <p>3. Reflections</p> 
+          <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 2 -->
+                    <source src="The Neighbourhood - Reflections (Official Audio).mp3" type="audio/mpeg">
+                </audio>
+    </div>
+     <!--CANCIÓN 4-->
+    <div class="canciones"> 
+         <p>4. W.D.Y.W.F.M</p> 
+          <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 2 -->
+                    <source src="The Neighbourhood - W.D.Y.W.F.M (Official Audio).mp3" type="audio/mpeg">
+                </audio>
+    </div>
+
+    
+
+ </div>
 
 </body>
 </html>
