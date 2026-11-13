@@ -20,46 +20,64 @@
 
     <h1>Musica de The Neighbourhood</h1>
     <p>Mejores canciones de The Nbhd</p> 
+    <!-- <div class="lista-canciones"> --> 
 
-    <div class="lista-canciones"> 
     <!--CANCIÓN -->
-    <div class="canciones"> 
+    <!-- <div class="canciones"> 
          <p>1. Sweater Weather</p> 
-          <audio controls class="audio-player">
+          <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Sweater Weather (1).mp3" type="audio/mpeg">
+                    <!-- <source src="Sweater Weather (1).mp3" type="audio/mpeg">
                 </audio>
-    </div>
-
+    </div> -->
+ 
     <!--CANCIÓN 2-->
-    <div class="canciones"> 
+   <!--  <div class="canciones"> 
          <p>2. CryBaby</p> 
-          <audio controls class="audio-player">
+          <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 2 -->
-                    <source src="The Neighbourhood - Cry Baby.mp3" type="audio/mpeg">
+                    <!-- <source src="Cry Baby.mp3" type="audio/mpeg">
                 </audio>
-    </div>
+    </div> -->
 
     <!--CANCIÓN 3-->
-    <div class="canciones"> 
+    <!-- <div class="canciones"> 
          <p>3. Reflections</p> 
-          <audio controls class="audio-player">
+          <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 2 -->
-                    <source src="The Neighbourhood - Reflections (Official Audio).mp3" type="audio/mpeg">
+                    <!-- <source src="Reflections.mp3" type="audio/mpeg">
                 </audio>
-    </div>
+    </div> -->
      <!--CANCIÓN 4-->
-    <div class="canciones"> 
+    <!-- <div class="canciones"> 
          <p>4. W.D.Y.W.F.M</p> 
-          <audio controls class="audio-player">
+          <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 2 -->
-                    <source src="The Neighbourhood - W.D.Y.W.F.M (Official Audio).mp3" type="audio/mpeg">
+                    <!-- <source src="W.D.Y.W.F.M.mp3" type="audio/mpeg">
                 </audio>
-    </div>
+        </div> -->
 
     
+   <!--  </div> -->
+<!-- UNA SOLA CAJA DE REPRODUCTOR -->
+      <div class="canciones">
+        <!-- 1. Le ponemos id="nombre-cancion" para que JS cambie el texto -->
+        <p id="nombre-cancion">Sweather Weather</p>
+        
+        <!--  Un solo audio con id="audio-player" -->
+        <audio id="audio-player" controls class="audio-player">
+          <source src="SweaterWeather.mp3" type="audio/mpeg">
+        </audio>
 
- </div>
+        <!-- Agregamos los botones para avanzar y retroceder -->
+        <div class="controles">
+          <button id="btn-anterior">⏮ Anterior</button>
+          <button id="btn-siguiente">Siguiente ⏭</button>
+        </div>
 
+      </div>
+      
+</div>
+<script src="script.js"></Script>
 </body>
 </html>
